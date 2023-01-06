@@ -52,13 +52,13 @@
         -
 ## 安装TexStudio 4.0.0^
 
-** [TexStudio下载](https://www.texstudio.org/)
+** [TexStudio下载](https://texstudio.sourceforge.net/)
 
- - TexStudio网站在境外,官方下载太慢的可以搭梯子
+ - TexStudio网站在境外,官方下载太慢的可以搭梯子,这里提供镜像地址https://texstudio.sourceforge.net/
 
    ![](img/texstd.jpg)
 
-- 点击上图所示的按键下载安装包
+- 点击上图所示的按键下载安装包![](img/tsd01.png)
 
 - 下载完成双击安装TexStudio
 
@@ -67,6 +67,20 @@
 ## 克隆课件与论文模板
 
 -** 可以在github上直接下载压缩包 但是比较慢 推荐先学习安装git 然后用git clone
+
+- [Github仓库下载地址](https://github.com/peitsan/Courseware-Tex-2023)
+
+  - 方式一: 打开链接直接下载压缩包 但是由于课件一节课更新一次 需要重复下载![](img/git01.png)
+
+  - 使用vscode中的git工具(左栏)clone
+
+    ![](img/git02.png)
+
+​    ![](img/git03.png)
+
+![](img/git04.png)
+
+选择git仓库下载目录![](img/git05.png)
 
 ## *拓展课：安装Typora并破解
 
@@ -89,3 +103,8 @@
 	- 替换即完成破解
 	  ![](img/typro08.png)
 ## *拓展课：安装git环境与github
+
+            -  [git安装包下载地址](https://git-scm.com/download/win)![](img/git10.png)
+            -  [参考环境配置教程](http://t.zoukankan.com/qdlhj-p-14577638.html)
+   -     1.下载git安装包一路Next下一步即可,不需要切换目录
+   -  2. 打开vscode根据这篇[文章](http://t.zoukankan.com/qdlhj-p-14577638.html)配置路径即可
