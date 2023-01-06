@@ -12,12 +12,12 @@
 
 - 1.下载Texlive软件的iso镜像到本地
   
-  - 点击上方的Texlive镜像下载链接![](img/tlv01.png)
+  - 点击上方的Texlive镜像下载链接![](./img/tlv01.png)
   - 双击图中的texlive.iso进行下载 
   
 - 2.下载完成进行安装,双击挂在iso文件
   
-  - 双击解压打开后可以看到有一个 install-tl-windows.bat文件![](img/tlv02.png)
+  - 双击解压打开后可以看到有一个 install-tl-windows.bat文件![](./img/tlv02.png)
 
   - 右键,使用管理员权限打开
   
@@ -25,11 +25,11 @@
   
     - 如下图所示,双击打开程序后,点击Advanced，出现如下界面，用于配置安装选项,切换安装目录后,点击安装。
   
-      ​	![](img/tlv10.png)
+      ​	![](./img/tlv10.png)
   
-      ![](img/tlv11.png)
+      ![](./img/tlv11.png)
   
-    - 完成安装后的页面![](img/tlv03.png)
+    - 完成安装后的页面![](./img/tlv03.png)
   
     - 等待程序运行，若出现上图所示的提示语,"欢迎来到TexLive世界",说明texlive安装完毕！
   
@@ -39,13 +39,13 @@
   
       - win+R快捷键打开程序搜索框 或者直接win11搜索 cmd命令行
   
-        ![](img/cmd.png)
+        ![](./img/cmd.png)
   
-        ![](img/cmd11.png)
+        ![](./img/cmd11.png)
   
-      - 打开命令行后输入tex,回车,若出现交互式操作界面如下图所示,说明安装成功![](img/cmd01.png)
+      - 打开命令行后输入tex,回车,若出现交互式操作界面如下图所示,说明安装成功![](./img/cmd01.png)
   
-      - 同样的输入 latex -v 检查latex版本号 出现版本号说明安装正确![](img/cmd12.png)
+      - 同样的输入 latex -v 检查latex版本号 出现版本号说明安装正确![](./img/cmd12.png)
   
         
   
@@ -56,9 +56,9 @@
 
  - TexStudio网站在境外,官方下载太慢的可以搭梯子,这里提供镜像地址https://texstudio.sourceforge.net/
 
-   ![](img/texstd.jpg)
+   ![](./img/texstd.jpg)
 
-- 点击上图所示的按键下载安装包![](img/tsd01.png)
+- 点击上图所示的按键下载安装包![](./img/tsd01.png)
 
 - 下载完成双击安装TexStudio
 
@@ -70,17 +70,17 @@
 
 - [Github仓库下载地址](https://github.com/peitsan/Courseware-Tex-2023)
 
-  - 方式一: 打开链接直接下载压缩包 但是由于课件一节课更新一次 需要重复下载![](img/git01.png)
+  - 方式一: 打开链接直接下载压缩包 但是由于课件一节课更新一次 需要重复下载![](./img/git01.png)
 
   - 使用vscode中的git工具(左栏)clone
 
-    ![](img/git02.png)
+    ![](./img/git02.png)
 
-​    ![](img/git03.png)
+​    ![](./img/git03.png)
 
-![](img/git04.png)
+![](./img/git04.png)
 
-选择git仓库下载目录![](img/git05.png)
+选择git仓库下载目录![](./img/git05.png)
 
 ## *拓展课：安装Typora并破解
 
@@ -89,22 +89,26 @@
 	
 - 双击压缩包解压到任意目录
 	- 压缩包位置在这里
-		![](img/typro00.png)-（<img src="img/typro01.png" style="zoom:80%;" />
-	- 打开压缩包解压后,双击软件安装包 setup.exe安装Typora![](img/typro04.png)
+		![](./img/typro00.png)-（<img src="./img/typro01.png" style="zoom:80%;" />
+	- 打开压缩包解压后,双击软件安装包 setup.exe安装Typora![](./img/typro04.png)
 	- 双击打开后,按照知识一直Next,安装目录按照自己需求调整
-	  ![](img/typro05.png)
-	  ![](img/typro06.png)
+	  ![](./img/typro05.png)
+	  ![](./img/typro06.png)
 - 安装完成后需要破解typora, 打开压缩包解压出来的文件夹,找到Crack文件夹
 	- 打开Crack文件夹并打开Typora安装目录
-	- Crack文件下有一个app.asar文件 ![](img/typro03.png)
+	- Crack文件下有一个app.asar文件 ![](./img/typro03.png)
 	- 安装目录的resource文件夹下也有一个app.asar文件
-	- Typora安装目录![](img/typro07.png)
+	- Typora安装目录![](./img/typro07.png)
 	- 用Crack文件夹里的app.asar替换掉resource下的app.asar
 	- 替换即完成破解
-	  ![](img/typro08.png)
+	  ![](./img/typro08.png)
 ## *拓展课：安装git环境与github
 
-            -  [git安装包下载地址](https://git-scm.com/download/win)![](img/git10.png)
-            -  [参考环境配置教程](http://t.zoukankan.com/qdlhj-p-14577638.html)
+- [git安装包下载地址](https://git-scm.com/download/win) ![](./img/git10.png)
+
+- [参考环境配置教程](http://t.zoukankan.com/qdlhj-p-14577638.html)
+
+    
+    
    -     1.下载git安装包一路Next下一步即可,不需要切换目录
    -  2. 打开vscode根据这篇[文章](http://t.zoukankan.com/qdlhj-p-14577638.html)配置路径即可
