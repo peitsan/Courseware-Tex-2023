@@ -1,0 +1,190 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\documentclass{MathorCupmodeling}
+\usepackage{zhlipsum,mwe}
+\bianhao{123456}
+\tihao{C}
+\timu{MathorCup 杯 \LaTeX{} 模板写作示例}
+\keyword{content；content；content}
+\begin{document}
+	\begin{abstract}
+		请使用 \TeX Live 2019，XeLaTeX 编译，请选用支持 UTF­-8 编码的编辑器。
+
+		使用者需要有一定的 \LaTeX{} 的使用经验（{\heiti 任务期三个月以内不建议使用 \LaTeX}，因此本文没有介绍基础使用），至少要会使用常用宏包的一些功能，比如参考文献，数学公式，图片使用，列表环境等等。模板已经添加了常用的宏包，无需用户再额外添加。
+
+		本模板
+		\begin{itemize}
+			\item 定义了几个宏 \lstinline|\def\ee{\mathrm{e}},\def\ii{\mathrm{i}},\def\leq{\leqslant},\def\geq{\geqslant}| 方便使用；
+			\item 图片应放在 \lstinline|figure| 文件夹中；
+			\item 定制了 matlab 和 python 代码环境，使用方法：\lstinline|\begin{matlab} content \end{matlab}| 和 \lstinline|\begin{python} content \end{python}|；
+			\item 加载了 \lstinline|cleveref| 宏包，使用方法：\lstinline|\cref{label}|。
+		\end{itemize}
+		其它的就是跟普通的 \lstinline|ctexart| 使用方法一样。
+	
+		欢迎到 \url{https://wenda.latexstudio.net/} 和 \url{https://github.com/CTeX-org/forum} 提问，注意提供 MWE，提问步骤可参考 \url{https://paste.ubuntu.com/p/wRq2mFCvWC/}。
+	\end{abstract}
+	\tableofcontents\newpage
+	\section{问题的提出}
+	\zhlipsum*[2]
+	\subsection{问题的背景}
+	\zhlipsum*[3]
+	\subsection{问题的提出}
+	\zhlipsum*[4]
+
+	\section{问题的分析}
+	\zhlipsum*[5]
+	\subsection{问题的整体分析}
+	\zhlipsum*[6]
+	\subsection{问题一的分析}
+	\zhlipsum*[7]
+	\subsection{问题二的分析}
+	\zhlipsum*[8]
+	\subsection{问题三的分析}
+	\zhlipsum*[9]
+
+	\section{模型的假设}
+	\begin{enumerate}
+		\item content；
+		\item content；
+		\item content；
+		\item content；
+		\item content
+	\end{enumerate}
+	\section{符号说明}
+	\begin{center}
+		\begin{tabularx}{0.7\textwidth}{c@{\hspace{1pc}}|@{\hspace{2pc}}X}
+			\Xhline{0.08em}
+			符号 & \multicolumn{1}{c}{符号说明}\\
+			\Xhline{0.05em}
+			$\delta$ & 赤纬角\\
+			$\beta$ & 经度\\
+			$\alpha$ & 纬度\\
+			$r$ & 地球半径\\
+			$\gamma$ & 太阳光与杆所成的夹角\\
+			$l$ & 杆的长度\\
+			$l_{y}$ & 杆的影子长度\\
+			$\vec{x}_{1},\vec{y}_{1},\vec{z}_{1}$ & 由杆的位置所生成的切平面的正交基\\
+			$\vec{\hat{x}}_{1},\vec{\hat{y}}_{1},\vec{\hat{z}}_{1}$ & 由杆的位置所生成的切平面的单位正交基\\
+			$\theta$ & 影子与北方的夹角\\
+			$l_{y}(i)$ & 编号为 $i$ 的数据对应的影子长度\\
+			$\theta_{i}$ & 编号为 $i$ 的数据对应的影子角度\\
+			\Xhline{0.08em}
+		\end{tabularx}
+	\end{center}
+
+	\section{模型的建立与求解}
+	\zhlipsum*[10]
+	\subsection{模型的准备}
+	\zhlipsum*[11]
+	\subsection{模型一的建立}
+	效果见\cref{fig:1}。
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics{example-image-plain.pdf}
+		\caption{content}\label{fig:1}
+	\end{figure}
+	\subsection{模型二的建立}
+	结果见\cref{tab:1}。
+	\begin{table}[htbp]
+		\centering
+		\caption{content}\label{tab:1}
+		\begin{tabularx}{0.7\textwidth}{c@{\hspace{1pc}}|@{\hspace{2pc}}X}
+		\Xhline{0.08em}
+		符号 & \multicolumn{1}{c}{符号说明}\\
+		\Xhline{0.05em}
+		$\delta$ & 赤纬角\\
+		$\beta$ & 经度\\
+		$\alpha$ & 纬度\\
+		$r$ & 地球半径\\
+		$\gamma$ & 太阳光与杆所成的夹角\\
+		$l$ & 杆的长度\\
+		$l_{y}$ & 杆的影子长度\\
+		$\vec{x}_{1},\vec{y}_{1},\vec{z}_{1}$ & 由杆的位置所生成的切平面的正交基\\
+		$\vec{\hat{x}}_{1},\vec{\hat{y}}_{1},\vec{\hat{z}}_{1}$ & 由杆的位置所生成的切平面的单位正交基\\
+		$\theta$ & 影子与北方的夹角\\
+		$l_{y}(i)$ & 编号为 $i$ 的数据对应的影子长度\\
+		$\theta_{i}$ & 编号为 $i$ 的数据对应的影子角度\\			\Xhline{0.08em}
+		\end{tabularx}
+	\end{table}
+	\subsection{模型三的建立}
+	\zhlipsum*[14]
+
+	\section{模型的检验}
+	\zhlipsum*[15]
+
+	\section{模型的评价与改进}
+	\zhlipsum*[16]
+	\subsection{模型的优点}
+	\zhlipsum*[17]
+	\subsection{模型的缺点}
+	\zhlipsum*[18]
+	\subsection{模型的改进}
+	\zhlipsum*[19]\cite{label}
+
+	\phantomsection
+	\addcontentsline{toc}{section}{参考文献}
+	\begin{thebibliography}{99}
+	\bibitem{label}content
+	\end{thebibliography}
+
+	\newpage
+	\appendix
+	\ctexset{section={
+		format={\zihao{-4}\heiti\raggedright}
+	}}
+	\begin{center}
+		\heiti\zihao{4} 附\hspace{1pc}录
+	\end{center}
+	\section{问题一的 MATLAB 代码}
+	\begin{matlab}
+clc,clear
+%第七题
+R71 = 1;
+R72 = 2;
+T7 = 1;
+K7 = 1;
+N7=10^5;
+G71=tf(R72,R71);
+G72=tf(1,[T7 1]);
+G73=tf(1,[T7 0]);
+G74=tf([N7*T7 0],[T7 N7]);
+G75=tf([N7*K7*T7 N7*K7],[T7 N7]);
+G76=tf([K7*T7 K7],[T7 0]);
+
+subplot(2,3,1)
+step(G71)
+xlabel('$t$','interpreter','latex', 'FontSize', 12);
+ylabel('$y$','interpreter','latex', 'FontSize', 12);
+title('比例环节');
+
+subplot(2,3,2)
+step(G72)
+xlabel('$t$','interpreter','latex', 'FontSize', 12);
+ylabel('$y$','interpreter','latex', 'FontSize', 12);
+title('惯性环节');
+
+subplot(2,3,3)
+step(G73)
+xlabel('$t$','interpreter','latex', 'FontSize', 12);
+ylabel('$y$','interpreter','latex', 'FontSize', 12);
+title('积分环节');
+
+subplot(2,3,4)
+step(G74,10^-3)
+xlabel('$t$','interpreter','latex', 'FontSize', 12);
+ylabel('$y$','interpreter','latex', 'FontSize', 12);
+title('微分环节');
+
+subplot(2,3,5)
+step(G75,10^-3)
+xlabel('$t$','interpreter','latex', 'FontSize', 12);
+ylabel('$y$','interpreter','latex', 'FontSize', 12);
+title('比例微分环节');
+
+subplot(2,3,6)
+step(G76)
+xlabel('$t$','interpreter','latex', 'FontSize', 12);
+ylabel('$y$','interpreter','latex', 'FontSize', 12);
+title('比例积分环节');
+	\end{matlab}
+\end{document}

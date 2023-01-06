@@ -1,0 +1,253 @@
+% !Mode:: "TeX:UTF-8"
+%%  本模板推荐以下方式编译:
+%%
+%%     1. PDFLaTeX[推荐]
+ 
+
+%%  注意：
+%%　  1. 文件默认的编码为 UTF-8 对于windows，请选用支持UTF-8编码的编辑器。
+%%   2. 若是模板有什么问题，请及时与我们取得联系，Email：latexstudio@qq.com。
+%%   3. 可以到  https://wenda.latexstudio.net 提问
+%%   4. 请安装 最新版本的 TeXLive 地址：https://www.latexstudio.net/page/texsoftware/
+
+\documentclass{apmcmthesis}
+
+\usepackage{url}
+
+%%%%%%%%%%%%填写相关信息%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tihao{A}                   %选题
+\baominghao{4321}           %报名号
+\begin{document}
+\pagestyle{frontmatterstyle}
+
+\begin{abstract}
+apmcmthesis 是 \url{https://www.latexstudio.net} 为 2019 年第九届 APMCM 亚太地区大学生数学建模竞赛 \url{http://www.apmcm.org/} 编写的 \LaTeX{} 模板, 旨在让大家专注于 论文的内容写作, 而不用花费过多精力在格式的定制和调整上.
+
+
+需要注意, 使用者需要有一 定的 \LaTeX{} 的使用经验, 至少要会使用常用宏包的一些功能, 比如参考文献，数学公式，图片使用，列表环境等等.  模板已经添加了常用的宏包, 无需用户再额外添加.
+
+模板维护库在  \url{https://github.com/latexstudio/APMCMThesis}
+
+\uwave{关注我们的微信公众号, 获取 \LaTeX{} 学习免费电子书和免费视频}：
+
+\centerline{\includegraphics[width=5cm]{gongzhonghao}}
+
+\keywords{Keywords1\quad  Keywords2\quad   Keywords3}
+\end{abstract}
+
+
+
+\newpage
+%目录
+\tableofcontents
+
+
+\newpage
+\pagestyle{mainmatterstyle}
+\setcounter{page}{1}
+\section{Introduction}
+In order to indicate the origin of problems, the following background is worth mentioning.
+\subsection{}
+
+
+\subsection{}
+
+
+
+\subsection{}
+
+
+\section{The Description of the Problem}
+\subsection{How do we approximate the whole course of ?}
+
+\begin{itemize}
+  \item
+  \item
+  \item
+\end{itemize}
+
+
+\subsection{How do we define the optimal configuration?}
+1) From the perspective of      :\par
+2) From the perspective of the      :\par
+3) Compromise:
+
+\subsection{The local optimization and the overall optimization}
+
+
+\begin{itemize}
+  \item
+  \item
+  \item Virtually:
+\end{itemize}
+
+
+\subsection{The differences in weights and sizes of}
+
+
+\subsection{What if there is no data available?}
+
+
+
+
+
+
+\section{Models}
+\subsection{Basic Model}
+
+
+\subsubsection{Terms, Definitions and Symbols}
+The signs and definitions are mostly generated from queuing theory.
+
+
+\subsubsection{Assumptions}
+
+
+\subsubsection{The Foundation of Model}
+1) The utility function
+
+\begin{itemize}
+\item The cost of       :
+\item The loss of       :
+\item The weight of each aspect:
+\item Compromise:
+\end{itemize}
+
+
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=3cm]{cat}
+  \caption{A cat}\label{cat1}
+\end{figure}
+
+
+
+3) The overall optimization and the local optimization
+
+\begin{itemize}
+\item The overall optimization:
+\item The local optimization:
+\item The optimal number of        :
+\end{itemize}
+
+
+
+\subsubsection{Solution and Result}
+1) The solution of the integer programming:
+2) Results:
+\subsubsection{Analysis of the Result}
+\begin{itemize}
+\item Local optimization and overall optimization:
+\item Sensitivity: The result is quite sensitive to the change of the three parameters
+\item
+\item Trend:
+\item Comparison:
+\end{itemize}
+\subsubsection{Strength and Weakness}
+
+\begin{description}
+\item[Strength:] The Improved Model aims to make up for the neglect of         . The result seems to declare that this model is more reasonable than the Basic Model and much more effective than the existing design.
+\item[Weakness:] Thus the model is still an approximate on a large scale. This has doomed to limit the applications of it.
+\end{description}
+
+\section{Conclusions}
+
+\subsection{Conclusions of the problem}
+\begin{itemize}
+\item 	
+\item
+\item
+\item
+\end{itemize}	
+\subsection{Methods used in our models}
+\begin{itemize}
+\item 	
+\item
+\item
+\item
+\end{itemize}
+\subsection{Applications of our models}
+\begin{itemize}
+\item 	
+\item
+\item
+\item
+\end{itemize}
+\section{Future Work}
+\subsection{Another model}
+\subsubsection{The limitations of queuing theory}
+
+
+
+
+\subsubsection{}
+
+
+\subsubsection{}
+
+
+
+\subsubsection{}
+
+
+
+
+
+%参考文献
+\begin{thebibliography}{9}%宽度9
+ \bibitem{bib:one} \LaTeX{}资源和技巧学习 \url{https://www.latexstudio.net}
+ \bibitem{bib:two} \LaTeX{}问题交流网站 \url{https://wenda.latexstudio.net}
+  \bibitem{bib:two} 模板库维护 \url{https://github.com/latexstudio/APMCMThesis}
+\end{thebibliography}
+
+\newpage
+%附录
+
+\section{Appendix}
+\begin{lstlisting}[language=matlab,caption={The matlab Source code of Algorithm}]
+kk=2;[mdd,ndd]=size(dd);
+while ~isempty(V)
+[tmpd,j]=min(W(i,V));tmpj=V(j);
+for k=2:ndd
+[tmp1,jj]=min(dd(1,k)+W(dd(2,k),V));
+tmp2=V(jj);tt(k-1,:)=[tmp1,tmp2,jj];
+end
+tmp=[tmpd,tmpj,j;tt];[tmp3,tmp4]=min(tmp(:,1));
+if tmp3==tmpd, ss(1:2,kk)=[i;tmp(tmp4,2)];
+else,tmp5=find(ss(:,tmp4)~=0);tmp6=length(tmp5);
+if dd(2,tmp4)==ss(tmp6,tmp4)
+ss(1:tmp6+1,kk)=[ss(tmp5,tmp4);tmp(tmp4,2)];
+else, ss(1:3,kk)=[i;dd(2,tmp4);tmp(tmp4,2)];
+end;end
+dd=[dd,[tmp3;tmp(tmp4,2)]];V(tmp(tmp4,3))=[];
+[mdd,ndd]=size(dd);kk=kk+1;
+end; S=ss; D=dd(1,:);
+ \end{lstlisting}
+\begin{lstlisting}[language=c,caption={The lingo source code}]
+kk=2;
+[mdd,ndd]=size(dd);
+while ~isempty(V)
+    [tmpd,j]=min(W(i,V));tmpj=V(j);
+for k=2:ndd
+    [tmp1,jj]=min(dd(1,k)+W(dd(2,k),V));
+    tmp2=V(jj);tt(k-1,:)=[tmp1,tmp2,jj];
+end
+    tmp=[tmpd,tmpj,j;tt];[tmp3,tmp4]=min(tmp(:,1));
+if tmp3==tmpd, ss(1:2,kk)=[i;tmp(tmp4,2)];
+else,tmp5=find(ss(:,tmp4)~=0);tmp6=length(tmp5);
+if dd(2,tmp4)==ss(tmp6,tmp4)
+    ss(1:tmp6+1,kk)=[ss(tmp5,tmp4);tmp(tmp4,2)];
+else, ss(1:3,kk)=[i;dd(2,tmp4);tmp(tmp4,2)];
+end;
+end
+    dd=[dd,[tmp3;tmp(tmp4,2)]];V(tmp(tmp4,3))=[];
+    [mdd,ndd]=size(dd);
+    kk=kk+1;
+end;
+S=ss;
+D=dd(1,:);
+ \end{lstlisting}
+
+
+\end{document} 
