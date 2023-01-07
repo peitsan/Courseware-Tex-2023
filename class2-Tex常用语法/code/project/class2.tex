@@ -1,0 +1,160 @@
+\documentclass{article}   %样式模板
+\usepackage{subfigure} %引入图片插入宏包
+\usepackage[graphicx]{realboxes} %引入图片插入宏包
+\usepackage{booktabs}  %引入书籍排版宏包
+\usepackage{ctex}  %切换为中文
+%opening
+\title{Hello TexGrammar}  %文章标题
+\author{Peitsan}    %文章作者
+\begin{document}  %Tex体
+	\maketitle
+	\begin{abstract}  %摘要
+		这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要	这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要	这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要
+		这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要	这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要	这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要	这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要	这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要
+	\end{abstract}
+
+\newpage
+
+	\tableofcontents %这是目录
+	
+\newpage
+	\section{盒模型}
+	 
+	  	\subsection{双栏盒子}
+	  	
+		\begin{figure}[htbp!]
+			\begin{minipage}{0.48\linewidth}
+				%盒子高度继承父级元素的高度
+				\centering    %让盒内元素左右居中对齐 默认上下居中停靠
+				\includegraphics[height=5cm]{img/sample.png}
+				%\includegraphics[命令]{图片路径}
+%				\caption{狗头1}\label{fig:1}  %图片标题
+			\end{minipage}
+			\begin{minipage}{0.48\linewidth}
+				\centering
+				\includegraphics[height=4cm]{img/sample.png}
+%				\caption{狗头2}\label{fig:2}
+			\end{minipage}
+		\end{figure}
+	
+		\subsection{三栏盒子}
+		
+		\begin{figure}[htbp!]
+			\begin{minipage}{0.32\linewidth}
+				\centering    
+				\includegraphics[height=4cm]{img/sample.png}
+			\end{minipage}
+			\begin{minipage}{0.32\linewidth}
+				\centering    
+				\includegraphics[height=2.5cm]{img/sample.png}
+			\end{minipage}
+			\begin{minipage}{0.32\linewidth}
+				\centering
+				\includegraphics[height=3cm]{img/sample.png}
+			\end{minipage}
+		\end{figure}
+		
+		\begin{figure}[htbp!]
+			\begin{minipage}{0.32\linewidth}
+				\centering    
+				\includegraphics[height=3cm]{img/sample.png}
+			\end{minipage}
+			\begin{minipage}{0.32\linewidth}
+				\centering    
+				\includegraphics[height=3cm]{img/sample.png}
+			\end{minipage}
+			\begin{minipage}{0.32\linewidth}
+				\centering
+				\includegraphics[height=3cm]{img/sample.png}
+			\end{minipage}
+		\end{figure}
+\newpage	
+	\section{Tex中文本的操作编辑}
+	
+		\subsection{缩进与空格}
+		
+			\noindent 1. Tex中段落默认首行缩进
+			
+			\noindent 2.取消首行缩进：
+			
+			在段落最前面添加 \verb|\|noindent 
+			
+			\noindent \textbf{这是不添加去缩进的状态,文段默认退两格}
+			
+			这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+			
+			\noindent \textbf{这是添加去缩进的状态,文段顶格。}
+			
+			\noindent 这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+			
+      \noindent 3.各种空格宽度对比：
+      
+		\noindent\verb|\|qquad 
+		
+		  \noindent	这是一行话这是一行话 \qquad 这是一行话\\
+		 \verb|\|quad 
+		 
+		  	 \noindent	这是一行话这是一行话 \quad 这是一行话\\
+		  \verb|\| 
+		  	  	
+		  	 \noindent	这是一行话这是一行话\ 这是一行话\\
+		  \verb|\|;
+		  
+		  	 \noindent	这是一行话这是一行话\;这是一行话\\
+		  \verb|\|, 
+		  	
+		  	 \noindent	这是一行话这是一行话\,这是一行话\\
+		  \verb|\|!	
+		  
+		  	 \noindent	这是一行话这是一行话\!这是一行话\\
+		  	
+		\subsection{加粗、斜体、下划线}
+		
+		\noindent 1.加粗：
+		
+		这是一段话这是一段话这是一段话这是一段话\textbf{这是一段加粗的话这是一段加粗的话这是一段加粗的话这是一段加粗的话}这是一段话这是一段话这是一段话\textbf{这是一段加粗的话这是一段加粗的话这是一段加粗的话这是一段加粗的话}这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		
+		\noindent 2.斜体：
+		
+			这是一段话这是一段话这是一段话这是一段话\textit{这是一段斜体的话这是一段加粗的话这是一段斜体的话这是一段斜体的话}这是一段话这是一段话这是一段话\textit{这是一段斜体的话这是一段加粗的话这是一段斜体的话这是一段斜体的话}这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		
+		\noindent 3.下划线：
+		
+			这是一段话这是一段话这是一段话这是一段话\underline{这是一段下划线的话这是一段下划线的话}这是一段话这是一段话这是一段话\underline{这是一段下划线的话}这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+			
+	\noindent 4.正文仿宋：
+		
+		这是一段话这是一段话这是一段话这是一段话\texttt{这是一段正文仿宋这是一段正文仿宋这是一段正文仿宋这是一段正文仿宋}这是一段话这是一段话这是一段话\texttt{这是一段正文仿宋这是一段正文仿宋这是一段正文仿宋这是一段正文仿宋}这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		\subsection{加粗、斜体、下划线}
+	\section{Tex中图片的操作编辑}
+	
+	
+	\section{Tex中表格的操作编辑}
+		\begin{center}
+			\begin{tabular}{cc}
+				\hline
+				\makebox[0.45\textwidth][c]{符号}	& \makebox[0.45\textwidth][c]{意义}   \\ \hline
+				Symbol  & Meanings \\ \hline
+			\end{tabular}
+		\end{center}
+	
+		\begin{center}
+			\begin{tabular}{ccc}
+				\hline
+				\makebox[0.25\textwidth][c]{符号}	& \makebox[0.35\textwidth][c]{意义} & \makebox[0.2\textwidth][c]{单位}	 \\ \hline
+				Symbol  & Meanings & Units\\ \hline
+			\end{tabular}
+		\end{center}
+\newpage
+
+\appendix 
+	\renewcommand{\appendixname}{Appendix~\Alph{section}}
+	\section{附表1——XXXXXX}
+	
+\newpage	
+\begin{thebibliography}{9}%宽度9
+	\bibitem{bib:one}
+	\bibitem{bib:two}
+\end{thebibliography}
+
+\end{document}
