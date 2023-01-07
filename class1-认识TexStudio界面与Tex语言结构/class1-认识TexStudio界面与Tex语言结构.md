@@ -1,4 +1,4 @@
-认识TexStudio界面与Tex语言结构
+# 认识TexStudio界面与Tex语言结构
 
 ## 	上手TexStudio
 
