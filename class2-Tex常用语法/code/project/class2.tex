@@ -1,8 +1,10 @@
-\documentclass{article}   %样式模板
+\documentclass[normalsize]{article}   %样式模板
+%\documentclass[默认字号]{article}   %修改默认字号
 \usepackage{subfigure} %引入图片插入宏包
 \usepackage[graphicx]{realboxes} %引入图片插入宏包
 \usepackage{booktabs}  %引入书籍排版宏包
 \usepackage{ctex}  %切换为中文
+\usepackage[font=small]{caption} %caption标题宏包
 %opening
 \title{Hello TexGrammar}  %文章标题
 \author{Peitsan}    %文章作者
@@ -122,14 +124,92 @@
 		
 			这是一段话这是一段话这是一段话这是一段话\underline{这是一段下划线的话这是一段下划线的话}这是一段话这是一段话这是一段话\underline{这是一段下划线的话}这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
 			
-	\noindent 4.正文仿宋：
+		\noindent 4.正文仿宋：
 		
 		这是一段话这是一段话这是一段话这是一段话\texttt{这是一段正文仿宋这是一段正文仿宋这是一段正文仿宋这是一段正文仿宋}这是一段话这是一段话这是一段话\texttt{这是一段正文仿宋这是一段正文仿宋这是一段正文仿宋这是一段正文仿宋}这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
-		\subsection{加粗、斜体、下划线}
+		
+		\subsection{修改字号}
+		
+		\noindent 1.标题字号：
+			
+					\begin{figure}[htbp!]
+						\centering
+						\captionsetup{font={small}}%修改标题字号
+						\includegraphics[height=4cm]{./img/sample.png}
+						\caption{是一个狗头}
+						\label{fig:10}
+			    	\end{figure}
+		    	
+		\noindent 2.正文字号：
+		
+		正常大小正常大小\small{small大小small大小small大小small大小small大小small大小small大小small大小}正常大小正常大小正常大小正常\tiny{tiny大小tiny大小tiny大小tiny大小tiny大小tiny大小tiny大小}大小正常大小正常大小正常大小正常大小正常大小正常\huge{huge大小huge大小huge大小huge大小huge大小} \Huge{Huge大小Huge大小Huge大小Huge大小Huge大小Huge大小Huge大小}\\
+		
+		\normalsize
+		\newpage
 	\section{Tex中图片的操作编辑}
-	
-	
+		\subsection{引入一张图片}
+		\begin{figure}
+			\centering
+			\captionsetup{font={small}}%修改标题字号
+			\includegraphics[height=4cm,width=4cm]{./img/sample.png}%图片长宽设置为4cm,图片路径在img文件下(记得带上文件类型名)
+			\caption{是一个狗头}
+			\label{fig:10}
+		\end{figure}
+		\newpage
+		\subsection{图片的浮动}
+			这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		\begin{figure}[h]
+			\centering
+			\captionsetup{font={small}}%修改标题字号
+			\includegraphics[height=4cm,width=4cm]{./img/sample.png}%图片长宽设置为4cm,图片路径在img文件下(记得带上文件类型名)
+			\caption{是一个狗头}
+			\label{fig:10}
+		\end{figure}
+		这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		\newpage
+			这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+			\begin{figure}[t]
+			\centering
+			\captionsetup{font={small}}%修改标题字号
+			\includegraphics[height=4cm,width=4cm]{./img/sample.png}%图片长宽设置为4cm,图片路径在img文件下(记得带上文件类型名)
+			\caption{是一个狗头}
+			\label{fig:10}
+		\end{figure}
+		这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		\newpage
+			这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+			\begin{figure}[b]
+			\centering
+			\captionsetup{font={small}}%修改标题字号
+			\includegraphics[height=4cm,width=4cm]{./img/sample.png}
+			\caption{是一个狗头}
+			\label{fig:10}
+		\end{figure}
+	这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		\newpage
+			这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+			\begin{figure}[p]
+			\centering
+			\captionsetup{font={small}}%修改标题字号
+			\includegraphics[height=4cm,width=4cm]{./img/sample.png}%图片长宽设置为4cm,图片路径在img文件下(记得带上文件类型名)
+			\caption{是一个狗头}
+			\label{fig:10}
+		\end{figure}
+		这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		
+		\newpage
+		这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+			\begin{figure}[htbp!]
+			\centering
+			\captionsetup{font={small}}%修改标题字号
+			\includegraphics[height=4cm,width=4cm]{./img/sample.png}%图片长宽设置为4cm,图片路径在img文件下(记得带上文件类型名)
+			\caption{是一个狗头}
+			\label{fig:10}
+		\end{figure}
+	这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话这是一段话。
+		\newpage
 	\section{Tex中表格的操作编辑}
+	\subsection{center环境下的表格}
 		\begin{center}
 			\begin{tabular}{cc}
 				\hline
@@ -137,14 +217,47 @@
 				Symbol  & Meanings \\ \hline
 			\end{tabular}
 		\end{center}
-	
-		\begin{center}
+	\subsection{table环境下的表格}
+		\begin{table}[htbp!]
 			\begin{tabular}{ccc}
 				\hline
 				\makebox[0.25\textwidth][c]{符号}	& \makebox[0.35\textwidth][c]{意义} & \makebox[0.2\textwidth][c]{单位}	 \\ \hline
 				Symbol  & Meanings & Units\\ \hline
 			\end{tabular}
-		\end{center}
+		\end{table}
+		\subsection{table*环境下的表格}
+			\begin{table*}[htbp!]
+			\centering
+			\begin{tabular}{ccc}
+				\toprule[1.5pt]
+				\makebox[0.25\textwidth][c]{符号}	& \makebox[0.35\textwidth][c]{意义} & \makebox[0.2\textwidth][c]{单位}	 \\ \hline
+				Symbol  & MeaningsMeaningsMeaningsMeanings & Units\\
+				\bottomrule
+			\end{tabular}%
+			\label{tab:addlabel}%
+			\end{table*}%
+		\subsection{设置表格列宽}
+			\begin{table}[htbp!]
+				\tabcolsep=0.2cm %设置最小列间距
+%				\tabcolsep=0.1cm %设置最小列间距
+			\begin{tabular}{ccc}
+				\hline
+				\makebox[0.25\textwidth][c]{符号}	& \makebox[0.35\textwidth][c]{意义} & \makebox[0.2\textwidth][c]{单位}	 \\ \hline
+				Symbol  & MeaningsMeaningsMeaningsMeanings & Units\\ \hline
+				Symbol  & MeaningsMeaningsMeaningsMeanings & Units\\ \hline
+			\end{tabular}
+			\end{table}
+		\subsection{设置表格行间距宽}
+		
+		\begin{table}[htbp!]
+			\renewcommand\arraystretch{0.1} %设置行间距
+			\begin{tabular}{ccc}
+				\hline
+				\makebox[0.25\textwidth][c]{符号}	& \makebox[0.35\textwidth][c]{意义} & \makebox[0.2\textwidth][c]{单位}	 \\ \hline
+				Symbol  & Meanings & Units\\ \hline
+				Symbol  & Meanings & Units\\ \hline
+			\end{tabular}
+		\end{table}
 \newpage
 
 \appendix 

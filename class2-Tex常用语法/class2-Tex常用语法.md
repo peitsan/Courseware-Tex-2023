@@ -60,6 +60,7 @@
                 \end{figure}
      ```
     - 盒子排版效果![](./img/box01.png)
+  
 - 3.Tex中常用到的布局间距标签(了解)
     ```tex
     % ================= 设置版面，A4 页面高 29.7cm, 宽 21.0cm ================ %
@@ -108,13 +109,157 @@
                                         a\,b 	   % 空格1/6m的宽度
                                         a\!b 	   % 靠近紧贴1/6m的宽度
                     ```
-	- 2. [加粗、斜体、下划线、正文仿宋](https://blog.csdn.net/weixin_36670529/article/details/106468778)	
+	  
+    - 2. [加粗、斜体、下划线、正文仿宋](https://blog.csdn.net/weixin_36670529/article/details/106468778)	
+         
          - 1.加粗：\textbf{加粗文字}
+         
          - 2.斜体：\textit{变斜体强调文字}
+         
          - 3.下划线：\underline{下划线}	
+         
          - 4.正文仿宋：\texttt{正文仿宋}	
+         
+    
+    - 3. [修改字号](https://blog.csdn.net/weixin_36670529/article/details/106468778)		
+        - 1.认识字号
+          			- Tex中的字号从小到大依次如下:
+    
+             ```tex
+                				 \tiny
+                	             \scriptsize
+                	             \footnotesize
+                	             \small
+                	             \normalsize
+                	             \large
+                	             \Large
+                	             \LARGE
+             	             \huge
+              	             \Huge
+          ```
+       - 2.caption标题字号 \captionsetup{font={字号}}
+         			- 用例  \captionsetup{font={small}}
+      - 3.正文字号 \字号{准备变小的文字}
+       				 				 				
+       				 -  用例  \small{准备变小的文字}
+      
 ## 	Tex中图片的操作编辑
+  - 1. 引入图片宏包
 
+```tex
+	\usepackage{subfigure} %引入图片插入宏包
+	\usepackage[graphicx]{realboxes} %引入图片插入宏包
+```
+  - 2. 图片标题 
+
+```tex
+	\caption{是一个狗头}
+```
+  - 3.图片位置左右居中
+
+```tex
+	\centering
+```
+  - 4.图片编号标签
+
+```tex
+	\label{fig:序号}
+```
+  - 5.声明环境并引入图片
+
+```tex
+	\begin{figure} %声明图片环境
+		\centering %图片位置左右居中
+		\captionsetup{font={small}}%修改图片标题字号
+		\includegraphics[对图片的操作命令]{图片路径}
+		\caption{图片标题}
+		\label{fig:序号}
+	\end{figure}	
+```
+  - 6.用例
+
+```tex
+		\begin{figure}
+			\centering
+			\captionsetup{font={small}}%修改标题字号
+			\includegraphics[height=4cm,width=4cm]{./img/sample.png}%图片长宽设置为4cm,图片路径在img文件下(记得带上文件类型名)
+			\caption{是一个狗头}
+			\label{fig:10}
+		\end{figure}
+```
 ## 	Tex中表格的操作编辑
+ - 1. 引入表格制表符宏包
 
-## 	Tex中的操作编辑
+```tex
+	\usepackage{booktab} %引入图片插入宏包
+```
+  - 2. 图片标题 
+
+```tex
+	\caption{是一个表格} %表题在下方 一般比正文小一号自 所以要设置字号
+```
+  - 3.图片位置左右居中
+
+```tex
+	\centering
+```
+  - 4.三种表格环境
+    
+
+```tex
+	\subsection{center环境下的表格}
+            \begin{center}  %center居中分散对齐环境
+                \begin{tabular}{cc} %表格主题环境{cc} 表示表格有两列 且居中(center->c)
+                    \hline  		%细直线
+                    \makebox[0.45\textwidth][c]{符号}	& \makebox[0.45\textwidth][c]{意义}                       \\ \hline   %makebox为创建表格列 参数0.45\textwidth表示文字宽度占比45%
+                    Symbol  & Meanings \\ \hline %表格数据正文 用&分开 没一行最后要有换行符\\
+                \end{tabular}
+        \end{center}
+	\subsection{table环境下的表格}
+        \begin{table}[htbp!]
+            \begin{tabular}{ccc}
+                \hline
+                \makebox[0.25\textwidth][c]{符号}	& \makebox[0.35\textwidth][c]{意义} & \makebox[0.2\textwidth][c]{单位}	 \\ \hline
+                Symbol  & Meanings & Units\\ \hline
+            \end{tabular}
+        \end{table}
+	\subsection{table*环境下的表格}
+            \begin{table*}[htbp!]
+            \centering
+            \begin{tabular}{ccc}
+                \toprule[1.5pt]
+                \makebox[0.25\textwidth][c]{符号}	& \makebox[0.35\textwidth][c]{意义} & \makebox[0.2\textwidth][c]{单位}	 \\ \hline
+                Symbol  & MeaningsMeaningsMeaningsMeanings & Units\\
+                \bottomrule
+            \end{tabular}%
+            \label{tab:addlabel}%
+            \end{table*}%
+```
+  - 6.用例
+
+```tex
+		\begin{table}
+		\caption{这是一个表格} 		%设置表格标题
+		\captionsetup{font={small}} %设置表格字号
+		   \begin{tabular}{cc} %表格主题环境{cc} 表示表格有两列 且居中(center->c)
+                    \hline  		%细直线
+                    \makebox[0.45\textwidth][c]{符号}	& \makebox[0.45\textwidth][c]{意义}                       \\ \hline   %makebox为创建表格列 参数0.45\textwidth表示文字宽度占比45%
+                    Symbol  & Meanings \\ \hline %表格数据正文 用&分开 没一行最后要有换行符\\
+                \end{tabular}
+		\end{table}
+```
+
+- [Tex表格在线生成工具]([Create LaTeX tables online – TablesGenerator.com](https://www.tablesgenerator.com/))
+
+  - 记得表格粘贴后需要去除颜色 修改为三线表
+  - 对于数据大量的表格不适用  数据量大建议用Pandas处理
+
+- [使用Python将Excel表格转换为Tex格式打印](https://blog.csdn.net/weixin_43823679/article/details/120231186)
+
+  - 使用pandas打印excel表格 可以写for循环按指定条数打印出多个表格 这样就可以分页了
+
+    `import pandas as pd`
+    `table=pd.read_excel('test.xlsx')`
+
+    `print(table.to_latex(index=False,label='ccdd'))`
+
