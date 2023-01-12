@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {}Tex中常用、好用的宏包}{4}{section.1}%
+\contentsline {section}{文献列表}{10}{section*.2}%
+\contentsline {section}{\numberline {附件A}附表1——XXXXXX}{14}{section.1}%
+\contentsline {section}{\numberline {附件B}附表2——XXXXXX}{14}{section.2}%
+\contentsline {section}{\numberline {附件C}附表3——XXXXXX}{14}{section.3}%

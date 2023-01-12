@@ -1,18 +1,27 @@
 % !Mode:: "TeX:UTF-8"
 % !TEX program  = xelatex
 \documentclass[withoutpreface,bwprint]{cumcmthesis}
-\usepackage{gbt7714}
+%\usepackage{bibtex} %引入bibtex宏包
+
+\usepackage{gbt7714}  %引入国标引用宏包sty文件
+\bibliographystyle{gbt7714-numerical} %引入引用格式bst样式文件  国标2005样式
+
+
+%\bibliographystyle{gbt7714-author-year.bst} %引入引用格式bst样式文件  IEEE国际会议论文标准样式
+%\bibliographystyle{路径}
+
+%\usepackage{cite} %引入cite文献管理宏包
+
 \usepackage{array}
 \usepackage{booktabs}
-\bibliographystyle{gbt7714-numerical}
-\title{ssssss}
+\title{Hello Citation}
 \tihao{A}            % 题号
-\baominghao{4321}    % 报名号
+\baominghao{114514}    % 报名号
 \schoolname{重庆邮电大学}
-\membera{林培灿}
-\memberb{童仕延}
-\memberc{黎昊}
-\supervisor{沈世云}
+\membera{Peitsan}
+\memberb{ShiyanGG}
+\memberc{LihaoGG}
+\supervisor{Boss Shen}
 \yearinput{2022}     % 年
 \monthinput{09}      % 月
 \dayinput{13}        % 日
@@ -20,12 +29,64 @@
 \begin{document}
 	\maketitle
 	\begin{abstract}
-		。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。
+		摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。
 		\keywords{关键词1\quad  关键词2\quad   关键词3}
 	\end{abstract}
 	
-	\newpage
-	\bibliography{bib/cite.bib}
+	
+	\section{不使用bibtex}
+	
+%	正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。正文正文正文正文正文正文正文正文正文正文正文\cite{A}正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文\cite{B}正文正文正文正文正文正文正文正文正文正文正文\cite{bibAticle2}正文正文正文正文正文正文正文正文正文。
+	
+	
+	
+	
+	\section{使用bibtex}
+	
+			正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正\cite{2022gsnn}文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文\cite{bbb}正文正文正文正文正文正文正文正文正文正文正文正文正文\cite{zxg}正文正文\cite{dsf}正文正
+		
 	\newpage
 	
+%	\begin{thebibliography}{8}%宽度9
+%		\bibitem{文献标记号} 文献信息
+%		
+%		\bibitem{A} 邱华鑫, 段海滨, 范彦铭. 基于鸽群行为机制的多无人机自主编队[J]. 控制理论与应用, 2015, 32(10): 1298-1304.
+%		
+%		\bibitem{zxg} 张学工. 关于统计学习理论与支持向量机[J]. 自动化学报, 2000, 26(1):11.
+%		
+%		\bibitem{B} A. Nonymous et al.\ 2005
+%		
+%		
+%		\bibitem{bibAticle2} A.N. Other \& S.O.M. Ebody 2004 
+%	\end{thebibliography}
+
+	
+	
+	
+	
+%删去参考文献标题 更换为自定义英文标题
+%		\section{Reference}
+%		\begingroup  % 去掉thebibliography环境自带的“参考文献”标题
+%		\renewcommand{\section}[2]{} 
+%		\begin{thebibliography}{99}
+%			\addtolength{\itemsep}{-1.5ex}  % 缩小行距
+%			\bibitem{th1}李珍,郑芳,程范军.感染性疾病mRNA疫苗的研究进展[J].华中科技大学学报(医学版),2021,50(02):234-239+246.
+%			\bibitem{th2}陈彦,孙英.mRNA疫苗研究进展——2021年拉斯克奖临床医学研究奖[J].首都医科大学学报,2021,42(05):893-899.
+%			\bibitem{th3}尼博,李月华,刘拂晓,魏荣.mRNA疫苗研究进展及其在传染病防控中的应用[J].中国兽医学报,2022,42(03):600-606.DOI:10.16303/j.cnki.1005-4545.2022.03.30.
+%			\bibitem{th4}张琳,李燕,安志杰.新型冠状病毒mRNA疫苗研发进展[J].中国疫苗和免疫,2020,26(03):349-356.
+%			\bibitem{th5}Lin Chien-Jung,Mecham Robert P.,Mann Douglas L.. RNA Vaccines for COVID-19: 5 Things Every Cardiologist Should Know[J]. JACC: Basic to Translational Science,2020,5(12).
+%			\bibitem{th6}孟子延,马丹婧,高雪,李琦涵.mRNA疫苗及其作用机制的研究进展[J].中国生物制品学杂志,2021,34(06):740-744.DOI:10.13200/j.cnki.cjb.003368.
+%		\end{thebibliography}
+%		\endgroup
+	
+	
+	
+	
+	\newpage
+	
+\bibliography{bib/bibtex.bib}
+	
+%	\bibitem{A} Bernhard,Frank,Jkel,nd  Schlkopf  and  Wichmann, F. A. A Tutorial on Kernel Methods for Categorization,Journal of Mathematical Psychology,2007,51(6),343-358
+	
+	\newpage
 \end{document}

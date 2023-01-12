@@ -87,10 +87,14 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
 \renewcommand{\cftsecaftersnumb}{\hskip.4em}
 
-
+\definecolor{purple}{rgb}{0.5,0,0.5} %[0,1]
+\definecolor{y}{rgb}{0.5,0.5,0}
+\definecolor{Purple}{RGB}{255,0,255} %[0,255]
+%\definecolor{Yellow}{rgb}{0.5,0.2,0}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
+
 % 超链接
 %	 \hypersetup{%
 %%         xetex,
@@ -112,20 +116,25 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \RequirePackage{fontspec}
 \newfontfamily\yaheiconsola{YaHei.Consolas.1.11b.ttf}
 \newfontfamily\monaco{MONACO.TTF}
+
+%\newfontfamily\songti{MONACO.TTF}
+
+%\newfontfamily\fangsong{MONACO.TTF}
+
 \setmonofont[
 Contextuals={Alternate},
 ItalicFont = Fira Code Retina Nerd Font Complete.otf     % to avoid font warning
 ]{YaHei.Consolas.1.11b.ttf}
+
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
-
-
-
  \lstset{
  	language=TeX,
+ 	frame = shadowbox,
  	backgroundcolor=\color{backcolour},   
  	commentstyle=\color{codegreen},
  	keywordstyle=\color{magenta},
@@ -485,9 +494,10 @@ ItalicFont = Fira Code Retina Nerd Font Complete.otf     % to avoid font warning
 % 中文标题格式设置
 % 目录深度
 \setcounter{secnumdepth}{3}
+
 % 节标题格式, 居中, 使用\chinese命令修改计数器
 \def\@seccntformat#1{\csname the#1\endcsname\ }
-\renewcommand\thesection{\chinese{section}、}
+\renewcommand\thesection{\chinese{section、}}
 \renewcommand\thesubsection{\arabic{section}\thinspace.\thinspace\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection\thinspace.\thinspace\arabic{subsubsection}}
 \renewcommand\section{\@startsection{section}{1}{\z@}%
@@ -542,12 +552,12 @@ ItalicFont = Fira Code Retina Nerd Font Complete.otf     % to avoid font warning
 	}
 % 定义附录
 
-% \renewcommand{\setthesection}{\appendixname\Alph{section}}
-% \renewcommand\appendix{\par
-	% \setcounter{section}{0}%
-	 % \setcounter{subsection}{0}%
-	% \gdef\thesection{\appendixname\@Alph\c@section}}
-% 重定义参考文献环境
+% \renewcommand{\setthesection}{\appendixname\chinese{section}}
+ \renewcommand\appendix{\par
+	 \setcounter{section}{0}%
+	  \setcounter{subsection}{0}%
+	 \gdef\thesection{\appendixname\@Alph\c@section}}
+ 重定义参考文献环境
 \renewenvironment{thebibliography}[1]
      {\section*{\refname}%
       \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
@@ -609,11 +619,11 @@ ItalicFont = Fira Code Retina Nerd Font Complete.otf     % to avoid font warning
 \newcommand*{\mcm@cap@contentsname}{目录}
 \newcommand*{\mcm@cap@listfigurename}{插图清单}
 \newcommand*{\mcm@cap@listtablename}{附表清单}
-\newcommand*{\mcm@cap@refname}{参考文献}
+\newcommand*{\mcm@cap@refname}{文献列表}
 \newcommand*{\mcm@cap@indexname}{索引}
-\newcommand*{\mcm@cap@figurename}{图}
+\newcommand*{\mcm@cap@figurename}{图片}
 \newcommand*{\mcm@cap@tablename}{表}
-\newcommand*{\mcm@cap@appendixname}{附录}
+\newcommand*{\mcm@cap@appendixname}{附件}
 \newcommand*{\mcm@cap@abstractname}{摘要}
  %%%  中文关键字
 \newcommand*{\mcm@cap@keywordsname}{关键字}
@@ -667,15 +677,15 @@ ItalicFont = Fira Code Retina Nerd Font Complete.otf     % to avoid font warning
 注意电子版论文中不得出现此页。}）
 \endquotation
 }
-%设置目录格式
-% 节的目录格式
-% \titlecontents{section}[0pt]{\vspace{2mm}\bfseries}
-% {\thecontentslabel\hskip.5em}{}{\titlerule*[0.5pc]{.}\contentspage}
-% % 小节的目录格式
-% \titlecontents{subsection}[30pt]{\songti}
-% {\thecontentslabel\hskip.5em}{}{\titlerule*[0.5pc]{.}\contentspage}
-% \titlecontents{subsubsection}[55pt]{\songti}
-% {\thecontentslabel\hskip.5em}{}{\titlerule*[0.5pc]{.}\contentspage}
+设置目录格式
+ 节的目录格式
+ \titlecontents{section}[0pt]{\vspace{4mm}\bfseries}
+ {\thecontentslabel\hskip.12em}{}{\titlerule*[0.5pc]{.}\contentspage}
+ % 小节的目录格式
+ \titlecontents{subsection}[30pt]{\songti}
+ {\thecontentslabel\hskip.5em}{}{\titlerule*[0.5pc]{.}\contentspage}
+ \titlecontents{subsubsection}[55pt]{\songti}
+ {\thecontentslabel\hskip.5em}{}{\titlerule*[0.5pc]{.}\contentspage}
 
 % 上标文献
 \newcommand{\upcite}[1]{$^{\mbox{\scriptsize \cite{#1}}}$}

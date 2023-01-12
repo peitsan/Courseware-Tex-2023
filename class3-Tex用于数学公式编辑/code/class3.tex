@@ -1,30 +1,396 @@
 % !Mode:: "TeX:UTF-8"
 % !TEX program  = xelatex
-\documentclass[withoutpreface,bwprint]{cumcmthesis}
-\usepackage{gbt7714}
-\usepackage{array}
-\usepackage{booktabs}
-\bibliographystyle{gbt7714-numerical}
-\title{ssssss}
-\tihao{A}            % 题号
-\baominghao{4321}    % 报名号
-\schoolname{重庆邮电大学}
-\membera{林培灿}
-\memberb{童仕延}
-\memberc{黎昊}
-\supervisor{沈世云}
+\documentclass[withoutpreface,bwprint]{cumcmthesis}  %样式模板引入
+
+\usepackage{gbt7714} %引入标准引用格式样式文件
+
+\usepackage{array}   %引入矩阵宏包
+
+\usepackage{booktabs}%引入制表符宏包
+\usepackage{witharrows} %带箭头公式宏包
+\bibliographystyle{gbt7714-numerical}%引入中文期刊标准引用格式宏包
+\title{Hello Equation}
+\tihao{ABCD}            % 题号
+\baominghao{114514}    % 报名号
+\schoolname{CQUPT}
+	\membera{Peitsan}
+\memberb{SYgiegie}
+\memberc{THgiegie}
+\supervisor{Boss Duan}
 \yearinput{2022}     % 年
 \monthinput{09}      % 月
 \dayinput{13}        % 日
 
 \begin{document}
-	\maketitle
+	\maketitle % 标题
 	\begin{abstract}
-		。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。
+		摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。摘要的具体内容。
 		\keywords{关键词1\quad  关键词2\quad   关键词3}
 	\end{abstract}
-	
 	\newpage
+	
+\section{认识数学公式Tex环境}
+	
+\noindent 公式块级标签环境
+
+
+文字注释 文字注释 文字注释 文字注释 
+
+
+%\begin{equation}
+%	公式体
+%\end{equation}
+
+	\begin{equation}
+			f(x)= \frac{\sum_{i=0}^{n}}{n} 
+	\end{equation}
+文字注释 文字注释 文字注释 文字注释 
+
+
+	\begin{equation*}
+		f(x)= \frac{\sum_{i=0}^{n}}{n} 
+	\end{equation*}
+
+\noindent 单行嵌入公式环境
+
+
+%  $ 公式体 $
+
+文字注释文字注释 文字注释    $ f(x)= \frac{\sum_{i=0}^{n}}{n} $ 文字注释 文字注释 文字注释 文字注释 
+
+\noindent 多行行级公式环境 
+
+文字注释 文字注释 文字注释 文字注释 
+$$
+  	 f(x)= \frac{\sum_{i=0}^{n}}{n} \\
+		s(x)= \lim_{x\rightarrow\infty}\sum_{i=0}^{n}f(x)\\
+		p(x)= \frac{s(x)}{\int_{x\rightarrow\infty}e^{x};}
+$$
+文字注释 文字注释 文字注释 
+
+\section{公式序号管理}
+
+\subsection{公式默认编号}
+
+\noindent equation自动编号
+
+	\begin{equation}
+		f(x)= \frac{\sum_{i=0}^{n}}{n}
+	\end{equation}
+
+	\begin{equation}
+		s(x)= \lim_{x\rightarrow\infty}\sum_{i=0}^{n}f(x)
+	\end{equation}
+
+
+\subsection{公式章节编号}
+
+\noindent 按照章节手动编号()
+%\tag{自定义编号}
+
+	\begin{equation}
+		\tag{2-2-1}
+		f(x)= \frac{\sum_{i=0}^{n}}{n}
+	\end{equation}
+	\begin{equation}
+	\tag{2-2-2}
+	s(x)= \lim_{x\rightarrow\infty}\sum_{i=0}^{n}f(x)
+\end{equation}
+
+\section{简单公式编辑}
+
+% 数字 常量 
+
+% 四则运算
+
+% 积分、高等代数
+
+% 集合运算
+
+% 逻辑代数
+
+% 概率论 
+
+
+
+	\subsection{希腊字母、特殊符号与常量、单位符号等}
+	
+	\noindent 0.希腊数字
+	
+	$ I $
+	
+		$ IV $
+	
+	\noindent 1.希腊字母
+	
+		$\alpha \quad \beta \quad \gamma \quad \lambda \quad \theta \quad \xi \quad \eta \quad \sigma \quad \chi \quad \psi \quad \phi \quad \mu \quad \varphi \quad \omega$
+			
+			
+		$A \quad B \quad \Gamma \quad \Lambda \quad \Theta \quad \Xi \quad E \quad \Sigma \quad X \quad \Psi  \quad \Phi\quad V U \quad \quad \Omega$	
+			
+	\noindent 2.特殊符号与常量
+	
+	%转移关键字
+	   * $\times$  $\cdot$ 
+	   
+	   ~ $\sim$ 
+	   
+%	   \ $\ $
+	   
+	   \&
+%	   & 
+	   
+	   $\{ \}$
+	   
+	   $[]$ 
+	   
+	   \%
+	   
+	   \_
+	    
+	    
+	    
+	   / $\textdiv$
+	 
+	 \begin{equation}
+	 	\begin{split}
+	 	\vec{z} = (x,y) \\
+	 	\|z\|  = \sqrt{x^{2}+y^{2}}
+	 	\end{split}
+	 \end{equation}
+	 
+		$\pi \quad \tau \quad \epsilon \quad \times \textdiv \quad \cdot \quad \sim \quad\surd \leq \quad \geq \quad\gtrapprox \quad \|X\|  $
+	  
+	  vector $\widehat{f(x)}$
+	  
+	  
+	  $\cos \quad \sin \quad \textdiv \quad \arg  \quad\cdot \quad \lim \quad \ln \quad  \log \quad \hat{x} \quad \vec{x} \quad  \widehat{abc} \quad \tilde{a} \quad \dot{a}$
+	  
+	\noindent 3.单位符号
+	
+	
+	$\textyen$
+	
+	$° \textdegree \quad ℃  \textcelsius$ 
+	
+	$ \textdegree \quad \textcelsius \quad \textohm \quad \S \quad \textpertenthousand \quad \textperthousand \quad \textyen \quad
+	$
+	\subsection{上下标、分数、积分、导数等}
+	$
+			\lambda^{e^{\epsilon_{p^{x}} }} \quad^ \lambda^{(x,y)} \quad
+		x^{n}  \quad x_{k}  \quad x^{n}\_{k} \quad x^{n}_{k}  
+	$
+	
+	$
+			f(x) = \int_{a^{2}}}^{b}e^{x} dg(x)
+	$
+	
+	$ 
+		f'(x) \quad f''(x) \quad f'''(x) \quad f^{(n)}(x)
+	$
+ %提高	
+%	\begin{equation}
+%		\begin{split}
+%			P(x_{1},x_{2}\cdots,x_{n})& =\prod_{i=1}^{n}p(x_{i}) \\ &=\frac{1}{\sigma\sqrt(2\pi^{\pi})}exp(-\frac{1}{2}\sum_{i=1}^{n}\frac{(x_{i}-\mu_{i})^2}{2\sigma^2_{i}})
+%		\end{split}
+%	\end{equation}
+
+
+	\subsection{无理数、无穷、极限}
+	
+		$^{3}\sqrt{x^{2}} $
+		
+		
+		infinity
+		
+		$ \sqrt{x}  \quad ^3\sqrt{x}\quad \infty $
+		
+		\begin{equation}
+			\lim_{x\rightarrow\infty}
+		\end{equation}
+	
+	\subsection{级数、重级数}
+		\begin{equation}
+			\ln{(1-x)} =\lim_{N\textrightarrow\infty} x+x^{2}+x^{3} \cdots x^{n} \cdots  = \lim_{N\textrightarrow\infty}\sum_{n=1}^{N} x^n
+		\end{equation}
+	
+		\begin{equation}
+		\sum_{n=1}^{N} \sum_{k=1}^{n} \frac{1}{x^{k}}
+		\end{equation}
+		
+	\subsection{集合、概率、逻辑运算}
+		$	
+			\circ \quad \bullet \quad\subseteq \quad \supseteq \quad \supsetneqq \quad \subsetneqq \quad \quad \bigodot  \quad \oplus \quad \otimes  \quad \bigcap \quad \bigcup \quad \complement  \quad \bigwedge \quad \bigvee
+		$
+		 
+		 
+		 $ 
+		  \{(x,y) | x<R \;,y<R\}
+		  $
+		  
+		 $ 
+		  A = \complement_{D}(B \bigcap E)
+		  $
+		  
+		   $ 
+		   	p(y^{*}\mid x^{*},X,Y) = \int p(y^{*}\mid f^{*})p(f^{*}\mid x^{*},X,Y)df^{*}
+		   $ 
+		   
+		   
+		 |  $\mid $ \\
+		 
+		   ||  $\| $\\
+		   
+		   
+		   $ 
+		   	AB \bigodot C \oplus D \bigwedge E \subseteq F
+		   $ 
+		   
+\section{高阶公式编辑}
+
+
+	\subsection{多行公式}
+		\begin{equation}
+			\begin{split}
+				&\Gamma(w,b) = \frac{a}{\|W\|} 
+				\\
+				&Max_{(w,b)}  \Gamma 
+				\\
+				s.t \quad  y_{i}(w^{T}x_{i}+b) &\geq 1, \quad i =1,2,\cdots,m.
+			\end{split}
+		\end{equation}
+	
+	
+	\subsection{大括号、矩阵}
+	
+	
+		\begin{equation}
+			\left\{
+				\begin{split}
+					x & = \rho+ r cos\theta \\
+					y &= \rho + r sin\theta 	\\
+					z &= \theta^{k}
+				\end{split}
+			\right
+		\end{equation}
+	
+		\begin{equation}
+			\left
+			\begin{split}
+				x & = \rho+ r cos\theta \\
+				y &= \rho + r sin\theta 	\\
+				z &= \theta^{k}
+			\end{split}
+			\right\}
+		\end{equation}
+	\begin{equation}
+		\left\{
+		\begin{split}
+			x & = \rho+ r cos\theta \\
+			y &= \rho + r sin\theta 	\\
+			z &= \theta^{k}
+		\end{split}
+		\right\}
+	\end{equation}
+	\\
+	
+	colume vertical 
+		\begin{equation}
+			C(x,x')=\begin{bmatrix}
+				c(x_{1},x'_{1}) &	c(x_{1},x'_{2})&\cdots&c(x_{1},x'_{n}) \\
+				c(x_{2},x'_{1}) & c(x_{2},x'_{2})  &\cdots&c(x_{2},x'_{n})
+				\\
+				\vdots           & \vdots          &\ddots&\vdots 
+				\\
+				c(x_{n},x'_{1}) & c(x_{n},x'_{2})&\cdots&c(x_{n},x'_{n})	
+			\end{bmatrix}
+		\end{equation}
+		
+		\begin{equation}
+			C(x,x')=\begin{matrix}
+				c(x_{1},x'_{1}) &	c(x_{1},x'_{2})&\cdots&c(x_{1},x'_{n}) \\
+				c(x_{2},x'_{1}) & c(x_{2},x'_{2})  &\cdots&c(x_{2},x'_{n})
+				\\
+				\vdots           & \vdots          &\ddots&\vdots 
+				\\
+				c(x_{n},x'_{1}) & c(x_{n},x'_{2})&\cdots&c(x_{n},x'_{n})	
+			\end{matrix}
+		\end{equation}
+		
+			\begin{equation}
+			C(x,x')=\begin{vmatrix}
+				c(x_{1},x'_{1}) &	c(x_{1},x'_{2})&\cdots&c(x_{1},x'_{n}) \\
+				c(x_{2},x'_{1}) & c(x_{2},x'_{2})  &\cdots&c(x_{2},x'_{n})
+				\\
+				\vdots           & \vdots          &\ddots&\vdots 
+				\\
+				c(x_{n},x'_{1}) & c(x_{n},x'_{2})&\cdots&c(x_{n},x'_{n})	
+			\end{vmatrix}
+		\end{equation}
+		\begin{equation}
+		C(x,x')=\begin{pmatrix}
+			c(x_{1},x'_{1}) &	c(x_{1},x'_{2})&\cdots&c(x_{1},x'_{n}) \\
+			c(x_{2},x'_{1}) & c(x_{2},x'_{2})  &\cdots&c(x_{2},x'_{n})
+			\\
+			\vdots           & \vdots          &\ddots&\vdots 
+			\\
+			c(x_{n},x'_{1}) & c(x_{n},x'_{2})&\cdots&c(x_{n},x'_{n})	
+		\end{pmatrix}
+	\end{equation}
+	\subsection{复杂逻辑带箭头}
+	
+	
+	\begin{equation}
+			\left 
+		\begin{WithArrows}\Arrow{我们展开}
+			A & = (a+1)^2  \\
+			& = a^2 + 2a + 1 \\
+			& = a^2 + 2a + 1
+		\end{WithArrows}\right
+	\end{equation}
+
+	\subsection{带条件公式}
+			\begin{equation}
+					L=\mid F_{0}F_{k}\mid ,\quad k\in(0,10)	
+			 \end{equation}
+	\subsection{优化目标函数}
+	
+			\begin{equation}
+			\begin{split}
+				Loss_{k} & = \frac{(\rho_{k}' - \rho_{k})^{2}}{\sum_{k=2}^{9}(\rho_{k}' - \rho_{k})^{2}} + \frac{(\theta_{k}' - \theta_{k})^{2}}{\sum_{k=2}^{9}(\theta_{k}' - \theta_{k})^{2}}  \\
+				&max\quad\sum_{k=2}^{9}Loss_{k}
+			\end{split}
+		\end{equation}	
+	
+	\subsection{长公式规范书写}
+	
+		\begin{equation}
+		\tag{不规范}
+		\begin{split}
+			k'\_{i}&= \sum_{i}( \sum_{i}+ \sum_{i+1})^{-1}\\
+			&=\frac{H_{k'\_{i}}P_{k'\_{i}}H_{k'\_{i}}^{T}}{H_{k'\_{i}}P_{k'\_{i}}H_{k'\_{i}}^{T}+R_{k'\_{i}}} \\
+			U'&= U_{i}+ k'(U_{i+1}- U_{i}) \\
+			\sum'& = \sum_{i} - k'\_{i}\sum_{i} \\
+			P'\_{k'}& =P_{k}-k'H_{k'\_{i}}P_{k}
+		\end{split}
+	\end{equation}
+
+
+		\begin{equation}
+			\tag{规范}
+			\begin{split}
+				k'\_{i}&= \sum_{i}( \sum_{i}+ \sum_{i+1})^{-1}
+				\\
+				       &=\frac{H_{k'\_{i}}P_{k'\_{i}}H_{k'\_{i}}^{T}}{H_{k'\_{i}}P_{k'\_{i}}H_{k'\_{i}}^{T}+R_{k'\_{i}}} \\
+			      	U'&= U_{i}+ k'(U_{i+1}- U_{i}) 
+			      	\\
+				\sum'& = \sum_{i} - k'\_{i}\sum_{i}
+				 \\
+			  P'_{k'}& =P_{k}-k'H_{k'_{i}}P_{k}
+			\end{split}
+		\end{equation}
+	
+	$X_{y=0}$
 	\bibliography{bib/cite.bib}
 	\newpage
 	

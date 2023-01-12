@@ -1,0 +1,30 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[龙宇浩\ 等(2022)龙宇浩 and 陶钧]{2022gsnn}
+龙宇浩, 陶钧.
+\newblock
+  基于Matern~(5/2)核函数高斯过程回归算法的实时对流层内插模型研究\allowbreak[J].
+\newblock 测绘地理信息, 2022, 47\allowbreak (S1): 205-210.
+
+\bibitem[Bernhard et~al.(2007)Bernhard, Schlkopf, and Wichmann]{bbb}
+BERNHARD J, Frank, SCHLKOPF, WICHMANN F~A.
+\newblock A tutorial on kernel methods for categorization\allowbreak[J].
+\newblock Journal of Mathematical Psychology, 2007, 51\allowbreak (6): 343-358.
+
+\bibitem[张学工(2000)]{zxg}
+张学工.
+\newblock 关于统计学习理论与支持向量机\allowbreak[J].
+\newblock 自动化学报, 2000, 26\allowbreak (1): 11.
+
+\end{thebibliography}

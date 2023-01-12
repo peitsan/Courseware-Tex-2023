@@ -278,7 +278,8 @@
           \end{appendix}
           ```
         - 3.在latex中
-       	 ```tex
+       	 
+          ```tex
           \begin{appendices}
           \end{appendices}
           ```
@@ -406,3 +407,10 @@
 
   - 5.![](./img/md05.png)
   - 6.![](./img/md06.png)
+
+
+
+- % 快捷键 ctrl + T
+- 分页符 \newpage
+- 换行符 \\\
+- 插入书签 快速断点
