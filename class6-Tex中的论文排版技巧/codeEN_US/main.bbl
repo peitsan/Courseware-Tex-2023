@@ -1,0 +1,52 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Gong et~al.(2011)Gong and Li]{gjq}
+GONG J, LI X.
+\newblock Improved texture feature extraction algorithm based on co-occurrence
+  matrix\allowbreak[J].
+\newblock Computer Engineering and Design, 2011, 32\allowbreak (6): 2068-2071.
+
+\bibitem[Chen et~al.(2010)Chen, Liu, and Chen]{chen2010adaptive}
+CHEN W~T, LIU W~C, CHEN M~S.
+\newblock Adaptive color feature extraction based on image color
+  distributions\allowbreak[J].
+\newblock IEEE Transactions on image processing, 2010, 19\allowbreak (8):
+  2005-2016.
+
+\bibitem[Acharya et~al.(2021)Acharya and Nanda]{acharya2021adjacent}
+ACHARYA S, NANDA P~K.
+\newblock Adjacent lbp and ltp based background modeling with mixed-mode
+  learning for foreground detection\allowbreak[J].
+\newblock Pattern Analysis and Applications, 2021, 24\allowbreak (3):
+  1047-1074.
+
+\bibitem[Zhengjun et~al.(2009)Zhengjun, Huafeng, Ruijing, et~al.]{yjz2009}
+ZHENGJUN Y, HUAFENG L, RUIJING S, et~al.
+\newblock Improving spatial frequency ratio of lifting wavelet transform for
+  image fusion\allowbreak[D].
+\newblock 2009.
+
+\bibitem[Li et~al.(2010)Li, Song, and Duan]{lbq}
+LI P, SONG S, DUAN G.
+\newblock Improved square-root ukf and its application in rendezvous and
+  docking\allowbreak[J].
+\newblock Electric Machines And Control, 2010, 14\allowbreak (11): 5.
+
+\bibitem[Jiang(2012)]{jwff}
+JIANG X.
+\newblock Research on dimensionality reduction method based on gaussian
+  process\allowbreak[D].
+\newblock Huazhong University of Science and Technology, 2012.
+
+\end{thebibliography}

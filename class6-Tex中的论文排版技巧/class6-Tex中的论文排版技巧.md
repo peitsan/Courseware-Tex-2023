@@ -12,7 +12,9 @@
 - 资料
 
   - [美赛论文排版]([2022年美赛论文排版一点我的建议 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzU1OTE2MDI4OA==&mid=2247502071&idx=1&sn=7ba8a1bbc256c5a76b0672bf5045094a&chksm=fc190678cb6e8f6ef7875a88a31dcfa8ebff34d38cb850fcd2e3457f1d45657e7b248b690c52&scene=27))
-  - 
+  - [固定图片位置、表格跨页显示]([【新提醒】Latex美赛论文排版中遇到的图片固定位置和表格跨页显示问题解决方法 - LaTeX/ScienceWord论坛 - 数学建模社区-数学中国 (madio.net)](http://www.madio.net/thread-460607-1-1.html))
+  - [美赛论文根据文献数据作图]([(13条消息) 美赛数模论文之图_闪闪亮亮的博客-CSDN博客_美赛的图](https://blog.csdn.net/u011692048/article/details/77474305))
+  - [美赛论文让图片嵌入文档]([美赛中latex使用技巧总结 (baidu.com)](https://baijiahao.baidu.com/s?id=1718583611678019524&wfr=spider&for=pc))
 
 - **0.题目**
 
@@ -181,7 +183,7 @@
   - 图表都需要标题和编号，以及**不能出现中文,包括图片里面的坐标轴，注释**
   - 段落的**空格和边距通篇一致**
   - **同一个句子变换字体不可行，统一Times new Roman**
-  - 方程等公式用equaiton环境，若太长考虑对齐
+  - 方程等公式用equaon环境，若太长考虑对齐
   - **英文标点是没有顿号**，只能用逗号分隔,且**不能用中文的逗号**
   - 正文部分**不能出现公式和英文单词高度不一**的情况
   - 论文中的**括号、字符都要使用半角**的
@@ -236,7 +238,7 @@
 
   - 美赛一般都要求有目录
   - 目录页码右端对齐
-  - 目录**三级标题**不能多、右边要对齐
+  - 目录**三级标题**不能多、`右边要对齐`
   - 伪标题立大功
 
 - **3.问题重述  Introduction** 
@@ -290,3 +292,54 @@
 
   - 参考文献的编号必须按照顺序来，不能有跳跃；不能出现中文文献
   - 以单词首字母次序排列
+  - 注意中文文献翻译为英文,最好用bibtex引用格式交给bib去处理
+  - 注意名字是先名后姓氏
+
+- **13.附录 Appendix**
+
+  - 也是支撑文献列表 支撑代码 支撑数据
+  - 注意代码中的**中文注释要全部翻译为英文** 或者干脆删除 
+
+- **其他**
+
+  - 三线表的画法
+
+    - ```tex
+      \begin{tabular}{ccc}
+      \toprule %添加表格头部粗线
+      Abbreviation& Their explanation\\
+      \midrule %添加表格中横线
+      COMP& comparison matrix used in AHP\\
+      $\lambda_{max} 青葱岁月，弹指间，毕业季到来。恍惚昨天还是那稚气未脱懵懂的样子，才觉时光如此短暂。天南地北，各奔东西。开始了各自不同的人生轨迹。忐忑而期待。amp; the maximum eigenvalue\\
+      \textbf{v}& the eigenvector of COMP corresponding to $\lambda_{max}$\\
+      $v_i 青葱岁月，弹指间，毕业季到来。恍惚昨天还是那稚气未脱懵懂的样子，才觉时光如此短暂。天南地北，各奔东西。开始了各自不同的人生轨迹。忐忑而期待。amp; the $i^{th}$ element in \textbf{v}\\
+      \bottomrule %添加表格底部粗线
+      \end{tabular}
+      ```
+
+  - 在段落前面加点
+
+    - ```tex
+      \begin{itemize}
+      	\item
+      	\lipsum[1]
+      \end{itemize}
+      ```
+
+  - 使图片浮动排版
+
+    - 使用宏包float:
+
+    - 在写latex的时候，经常会遇到图片乱跑的情况，如果需要强制图片插入到当前的位置，则需要使用[H],这样假如当前页空间不够则会将当前页剩下的部分全部空出，并且将图片插入到下一页开始的地方。而如果使用了[h]，若当前页的位置不够，则latex会自动选择一个适合的地方放置图片，造成图片的位置不理想。
+
+    - ```tex
+      \usepackage{float}
+      \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.2\linewidth]{figures/screenshot004}
+      \caption*{}
+      \label{fig:screenshot004}
+      \end{figure}
+      ```
+
+    

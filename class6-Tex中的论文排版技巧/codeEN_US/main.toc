@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{}%
+\contentsline {subsection}{\numberline {1\,.\,1}Background}{1}{}%
+\contentsline {subsection}{\numberline {1\,.\,2}Restatement of the Problem}{1}{}%
+\contentsline {subsection}{\numberline {1\,.\,3}Our Work}{2}{}%
+\contentsline {section}{\numberline {2}Problem analysis}{2}{}%
+\contentsline {section}{\numberline {3}Assumption}{3}{}%
+\contentsline {section}{\numberline {4}Symbol Description}{3}{}%
+\contentsline {section}{\numberline {5}Model of Task 1 }{3}{}%
+\contentsline {subsection}{\numberline {5\,.\,1}Dataset pre-processing}{3}{}%
+\contentsline {subsection}{\numberline {5\,.\,2}Model Building——CNOCR}{4}{}%
+\contentsline {subsection}{\numberline {5\,.\,3}Model solving process}{5}{}%
+\contentsline {subsection}{\numberline {5\,.\,4}Handbook of CNOCR Model}{6}{}%
+\contentsline {section}{\numberline {6}Model of Task 2}{8}{}%
+\contentsline {subsection}{\numberline {6\,.\,1}Image Rough analysis}{8}{}%
+\contentsline {subsection}{\numberline {6\,.\,2}Model Building——5-domains feature extractor}{8}{}%
+\contentsline {subsection}{\numberline {6\,.\,3}Model solving process}{14}{}%
+\contentsline {section}{\numberline {7}Model of Task 3}{15}{}%
+\contentsline {subsection}{\numberline {7\,.\,1}Rough analysis of relationship between temperature and time}{15}{}%
+\contentsline {subsection}{\numberline {7\,.\,2}Model Building——Gaussian process Regression}{16}{}%
+\contentsline {subsection}{\numberline {7\,.\,3}Model solving process}{17}{}%
+\contentsline {section}{\numberline {8}Strengths and Weakness}{19}{}%
+\contentsline {section}{\numberline {9}Future Work}{20}{}%
+\contentsline {section}{\numberline {10}Conclusions}{21}{}%
+\contentsline {subsection}{\numberline {10\,.\,1}Conclusions of the problem}{21}{}%
+\contentsline {subsection}{\numberline {10\,.\,2}Methods used in our models}{22}{}%
+\contentsline {subsection}{\numberline {10\,.\,3}Applications of our models}{22}{}%
+\contentsline {section}{\numberline {11}Appendix}{23}{}%
+\contentsline {section}{Appendix}{23}{}%
+\contentsfinish 
