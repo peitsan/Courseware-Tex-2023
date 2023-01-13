@@ -176,22 +176,26 @@
 ## 英文论文中的排版技巧
 
 - **注意事项**
+  
   - **字体要用新罗马**
   - 标题依次加大一号
-  - 表格要用**三线表**
-  - **禁止使用中文标号以及标点后要注意空格,每一句话最后都要空一格**
+  - 表格要用**三线表**                                  ,   . 。''  "" 
+  - **禁止使用中文标号以及标点后要注意空格,每一句话最后都要空一格*
+    - this is a sentence. \; this is a sentence. 
+    - this is a sentence. this is a sentence.  不规范
   - 图表都需要标题和编号，以及**不能出现中文,包括图片里面的坐标轴，注释**
+    - 
   - 段落的**空格和边距通篇一致**
   - **同一个句子变换字体不可行，统一Times new Roman**
   - 方程等公式用equaon环境，若太长考虑对齐
-  - **英文标点是没有顿号**，只能用逗号分隔,且**不能用中文的逗号**
+  - **英文标点是没有顿号**，只能用逗号分隔,且**不能用中文的逗号 ** 、
   - 正文部分**不能出现公式和英文单词高度不一**的情况
   - 论文中的**括号、字符都要使用半角**的
   - 图片作图
     - 使用[[**draw.io**/](http://www.baidu.com/link?url=o6c-18cFF74Z4RYhAoCasRZlCo2Lt-0PpgAWUUpmCyq)]
     - 使用[Origin]([Origin Pro 2023 Crack [v10.5.116.52126\] Full Download [Mac/Win] (crackedera.com)](https://crackedera.com/originpro-crack/))
     - 使用[SPSSPRO]([https://www.spsspro.com](https://www.spsspro.com/))
-
+  
 - **1.摘要页 Abstract** 
 
   - 英文论文中的专业词汇

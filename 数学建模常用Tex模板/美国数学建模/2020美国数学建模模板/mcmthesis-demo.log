@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.22)  30 MAY 2022 14:18
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.22)  13 JAN 2023 19:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1326,8 +1326,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 219DFF6EB6956CF30D59B9BD075E317F;2891.
+
+Package rerunfilecheck Warning: File `mcmthesis-demo.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `mcmthesis-demo.out':
+(rerunfilecheck)             Before: AF51192BACA4AB2CE83EE271477023B9;2908
+(rerunfilecheck)             After:  219DFF6EB6956CF30D59B9BD075E317F;2891.
  ) 
 Here is how much of TeX's memory you used:
  18404 strings out of 476182

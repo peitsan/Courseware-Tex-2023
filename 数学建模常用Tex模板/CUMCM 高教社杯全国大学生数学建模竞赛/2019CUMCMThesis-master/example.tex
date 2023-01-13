@@ -49,9 +49,9 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
 
 欢迎大家到QQ群里沟通交流：91940767/478023327/640633524。我们也开通了问答区交流 \LaTeX{}技术：\url{https://wenda.latexstudio.net}，欢迎大家前来交流，有问题就来这里，与大神零距离。
 
-\uwave{关注我们的微信公众号}：
+%\uwave{关注我们的微信公众号}：
 
-\centerline{\includegraphics[width=7cm]{gongzhonghao2}}
+%\centerline{\includegraphics[width=7cm]{gongzhonghao2}}
 
 \keywords{\TeX{}\quad  图片\quad   表格\quad  公式}
 \end{abstract}
@@ -187,14 +187,12 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
 
 \begin{figure}[c]
 	\centering
-	\includegraphics[height=0.2\textheight]{smokeblk}
+	\includegraphics[height=0.2\textheight]{f1.png}
 	\caption{多图并排示例}
 \end{figure}
-\\
-\\
 \begin{figure}[c]
 	\centering
-	\includegraphics[height=0.2\textheight]{smokeblk}
+	\includegraphics[height=0.2\textheight]{f1.png}
 	\caption{多图并排示例}
 	\end{figure
 \begin{figure}
@@ -229,6 +227,7 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
 \end{table}
 
 其绘制表格的代码及其说明如下。
+%tcode环境
 \begin{tcode}
     \begin{table}[!htbp]
         \caption[标签名]{中文标题}
@@ -243,7 +242,7 @@ frametitlerulewidth=.5pt, frametitlebackgroundcolor=gray!2,]
             \bottomrule[1.5pt]
         \end{tabular}
     \end{table}
-\end{tcode}
+\end{tcode} 
 
 \bigskip
 
@@ -308,7 +307,7 @@ f(x) =
 \]
 在数学环境里面，字体用的是数学字体，一般与正文字体不同。假如要公式里面有个别文字，则需要把这部分放在 \verb|text| 环境里面，即 \verb|\text{文本环境}| 。
 
-公式中个别需要加粗的字母可以用 \verb|$\bm{math symbol}$| 。如 $ \alpha a\bm{\alpha a} $ 。
+\textbf{公式中个别需要加粗}的字母可以用 \verb|$\bm{math symbol}$| 。如 $ \alpha a\bm{\alpha a} $ 。
 
 以上仅简单介绍了基础的使用，对于更复杂的需求，可以阅读相关的宏包手册，如 \href{http://texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf}{amsmath}。
 
@@ -392,6 +391,8 @@ f(x) =
 
 
 \section{其它小功能}
+
+
 \subsection{脚注}
 
 利用 \verb|\footnote{具体内容}| 可以生成脚注\footnote{脚注可以补充说明一些东西}。
@@ -502,7 +503,7 @@ f(x) =
     \label{tab:addlabel}%
 \end{table}%
 
-以上宏包都已经加载过了，不要重复加载它们。
+\textbf{以上宏包都已经加载过了，不要重复加载它们。}
 
 \section{排队算法--matlab 源程序}
 
