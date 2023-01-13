@@ -185,6 +185,10 @@
   - **英文标点是没有顿号**，只能用逗号分隔,且**不能用中文的逗号**
   - 正文部分**不能出现公式和英文单词高度不一**的情况
   - 论文中的**括号、字符都要使用半角**的
+  - 图片作图
+    - 使用[[**draw.io**/](http://www.baidu.com/link?url=o6c-18cFF74Z4RYhAoCasRZlCo2Lt-0PpgAWUUpmCyq)]
+    - 使用[Origin]([Origin Pro 2023 Crack [v10.5.116.52126\] Full Download [Mac/Win] (crackedera.com)](https://crackedera.com/originpro-crack/))
+    - 使用[SPSSPRO]([https://www.spsspro.com](https://www.spsspro.com/))
 
 - **1.摘要页 Abstract** 
 
@@ -235,9 +239,9 @@
   - 目录**三级标题**不能多、右边要对齐
   - 伪标题立大功
 
-- **3.问题重述  Introdution** 
+- **3.问题重述  Introduction** 
 
-  - 基本上和中文论文要求一致
+  - `基本上和中文论文要求一致`
   - 为了保证用人话,这一段最好**不要机翻**,机翻读起来很别扭
 
 - **4.问题分析 Analysis** 
